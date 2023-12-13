@@ -1,0 +1,42 @@
+.todo-item {
+  padding: 20px 24px;
+  box-shadow: 0px 35px 50px -15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-bkg {
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+.light-bkg {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+
+.item-wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr;
+  grid-template-columns: 20px 1fr 20px;
+  align-items: center;
+}
+
+.item-description {
+  word-break: break-word;
+}
+
+.light {
+  color: var(--very-dark-grayish-blue);
+}
+
+.completed-light {
+  color: var(--light-completed-item);
+  text-decoration: line-through;
+}
+
+.dark {
+  color: var(--dark-grayish-blue);
+}
+
+.completed-dark {
+  color: var(--dark-completed-item);
+  text-decoration: line-through;
+}

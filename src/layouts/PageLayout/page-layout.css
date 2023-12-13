@@ -1,0 +1,24 @@
+.page-wrapper {
+  min-height: 100dvh;
+  position: relative;
+}
+
+.content {
+  margin: 0 auto;
+  min-height: 100%;
+  padding: 2rem 24px;
+}
+
+.hero-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 300px;
+  max-height: 300px;
+  background-color: black;
+}
+
+.content {
+  max-width: 540px;
+}

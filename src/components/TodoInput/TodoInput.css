@@ -1,0 +1,23 @@
+input {
+  border: none;
+  background-color: transparent;
+  color: hsla(234, 11%, 52%, 1);
+  width: 100%;
+}
+
+input:focus-visible,
+label:focus-visible {
+  outline: 0;
+}
+
+label {
+  flex-grow: 1;
+}
+
+.input-wrapper {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}

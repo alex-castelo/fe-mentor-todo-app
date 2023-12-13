@@ -1,0 +1,18 @@
+h1 {
+  all: unset;
+  color: #fff;
+  font-family: Josefin Sans;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
