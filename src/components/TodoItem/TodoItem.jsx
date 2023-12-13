@@ -24,7 +24,11 @@ const TodoItem = ({ todo, checkTodo, deleteTodo }) => {
           completed={todo.completed}
           checkTodo={() => checkTodo(todo.id)}
         />
-        <p className={textClasses} onClick={() => checkTodo(todo.id)}>
+        <p
+          style={{ cursor: "pointer" }}
+          className={textClasses}
+          onClick={() => checkTodo(todo.id)}
+        >
           {todo.description}
         </p>
         <button onClick={() => deleteTodo(todo.id)}>

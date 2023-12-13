@@ -7,6 +7,7 @@ const TodoCheck = ({ completed, checkTodo }) => {
       height="20"
       viewBox="0 0 20 20"
       fill="none"
+      style={{ cursor: "pointer" }}
     >
       {completed ? (
         <svg

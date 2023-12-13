@@ -23,25 +23,10 @@ const Home = () => {
     setTodos([...todos, todo]);
   };
 
-  const DragAndDropText = () => {
-    return (
-      <p
-        style={{
-          textAlign: "center",
-          fontSize: "14px",
-          color: "#9495A5",
-        }}
-      >
-        Drag and drop to reorder list
-      </p>
-    );
-  };
-
   return (
     <div className="stack">
       <TodoInput todo={todo} setTodo={setTodo} addTodo={addTodo} />
       <TodoList todos={todos} setTodos={setTodos} />
-      <DragAndDropText />
     </div>
   );
 };
