@@ -7,7 +7,11 @@ import Home from "./views/Home";
 import PageLayout from "./layouts/PageLayout";
 
 const App = () => {
-  const theme = useState("dark");
+  const hasDarkSchema = window.matchMedia(
+    "(prefers-color-scheme: dark)"
+  ).matches;
+  const defaultSchema = hasDarkSchema ? "dark" : "light";
+  const theme = useState(defaultSchema);
 
   return (
     <ThemeContext.Provider value={theme}>
