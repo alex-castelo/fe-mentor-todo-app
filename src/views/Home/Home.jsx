@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import TodoInput from "../../components/TodoInput";
 import TodoList from "../../components/TodoList/TodoList";
+
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 const Home = () => {
@@ -11,7 +13,7 @@ const Home = () => {
   const addTodo = (description) => {
     const todo = {
       description,
-      id: Math.random() * 100,
+      id: uuidv4(),
       completed: false,
     };
 
