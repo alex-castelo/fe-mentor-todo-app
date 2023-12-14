@@ -11,6 +11,7 @@ const TodoCheck = ({ completed, checkTodo }) => {
     >
       {completed ? (
         <svg
+          data-testid="completed-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
@@ -39,7 +40,13 @@ const TodoCheck = ({ completed, checkTodo }) => {
           </defs>
         </svg>
       ) : (
-        <circle cx="10" cy="10" r="9.5" stroke="#393A4B" />
+        <circle
+          data-testid="non-completed-icon"
+          cx="10"
+          cy="10"
+          r="9.5"
+          stroke="#393A4B"
+        />
       )}
     </svg>
   );

@@ -1,10 +1,10 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:vitest/recommended",
     "prettier"
   ],
   "rules": {
@@ -12,7 +12,7 @@
     "react/react-in-jsx-scope": 0,
     "no-unused-vars": ["error", { "varsIgnorePattern": "[__ _]" }]
   },
-  "plugins": ["react", "import", "jsx-a11y"],
+  "plugins": ["react", "jsx-a11y", "vitest"],
   "parserOptions": {
     "ecmaVersion": 2022,
     "sourceType": "module",
