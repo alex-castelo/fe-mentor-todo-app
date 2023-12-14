@@ -1,10 +1,10 @@
 import { createRoot } from "react-dom/client";
 import { useState } from "react";
 
-import ThemeContext from "./context/ThemeContext";
-import TheHeader from "./components/TheHeader/TheHeader";
 import Home from "./views/Home";
 import PageLayout from "./layouts/PageLayout";
+import ThemeContext from "./context/ThemeContext";
+import TheHeader from "./components/TheHeader/TheHeader";
 
 const App = () => {
   const hasDarkSchema = window.matchMedia(

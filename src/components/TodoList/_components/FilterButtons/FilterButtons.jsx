@@ -1,15 +1,27 @@
-const FilterButtons = ({ setFilterBy, theme }) => {
+const FilterButtons = ({ setFilterBy, theme, filterBy }) => {
   const buttonClass = theme === "light" ? "light-btn" : "dark-btn";
 
   return (
     <div className="action-buttons">
-      <button className={buttonClass} onClick={() => setFilterBy("")}>
+      <button
+        style={{ color: filterBy === "" ? "#3A7CFD" : null }}
+        className={buttonClass}
+        onClick={() => setFilterBy("")}
+      >
         All
       </button>
-      <button className={buttonClass} onClick={() => setFilterBy("active")}>
+      <button
+        style={{ color: filterBy === "active" ? "#3A7CFD" : null }}
+        className={buttonClass}
+        onClick={() => setFilterBy("active")}
+      >
         Active
       </button>
-      <button className={buttonClass} onClick={() => setFilterBy("completed")}>
+      <button
+        style={{ color: filterBy === "completed" ? "#3A7CFD" : null }}
+        className={buttonClass}
+        onClick={() => setFilterBy("completed")}
+      >
         Completed
       </button>
     </div>

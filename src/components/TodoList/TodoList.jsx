@@ -65,8 +65,6 @@ const TodoList = ({ todos, setTodos }) => {
   const EmptyCard = () => {
     const textClasses = `item-description ${
       theme === "light" ? "light" : "dark"
-    } ${todo.completed && theme === "light" ? "completed-light" : ""}${
-      todo.completed && theme === "dark" ? "completed-dark" : ""
     }`;
 
     return (
@@ -88,7 +86,11 @@ const TodoList = ({ todos, setTodos }) => {
     return (
       <div style={{ marginTop: "1rem" }}>
         <TodoCard>
-          <FilterButtons setFilterBy={setFilterBy} />
+          <FilterButtons
+            setFilterBy={setFilterBy}
+            theme={theme}
+            filterBy={filterBy}
+          />
         </TodoCard>
       </div>
     );
@@ -104,7 +106,13 @@ const TodoList = ({ todos, setTodos }) => {
 
           <div className={actionButtonClass}>
             <ItemsLeft />
-            {!isMobile ? <FilterButtons setFilterBy={setFilterBy} /> : null}
+            {!isMobile ? (
+              <FilterButtons
+                setFilterBy={setFilterBy}
+                theme={theme}
+                filterBy={filterBy}
+              />
+            ) : null}
             <button className={buttonClass} onClick={deleteCompleted}>
               Clear completed
             </button>
