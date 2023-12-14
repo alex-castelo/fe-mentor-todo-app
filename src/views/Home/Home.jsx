@@ -2,15 +2,10 @@ import { useState } from "react";
 
 import TodoInput from "../../components/TodoInput";
 import TodoList from "../../components/TodoList/TodoList";
-
-const initialTodos = [
-  { description: "Watch react intro course", id: 1, completed: true },
-  { description: "Create a todo app with react", id: 2, completed: false },
-  { description: "Watch intermediate react course", id: 3, completed: false },
-];
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 const Home = () => {
-  const [todos, setTodos] = useState(initialTodos);
+  const [todos, setTodos] = useLocalStorage("todos", []);
   const [todo, setTodo] = useState("");
 
   const addTodo = (description) => {
