@@ -5,8 +5,8 @@ import useIsMobile from "../../hooks/useIsMobile";
 import ThemeContext from "../../context/ThemeContext";
 
 const PageLayout = ({ children }) => {
-  const [theme, _] = useContext(ThemeContext);
-  const [isMobile, __] = useIsMobile();
+  const [theme, __] = useContext(ThemeContext);
+  const [isMobile, _] = useIsMobile();
 
   const backgroundUrl = () => {
     if (theme === "light") {
@@ -25,7 +25,11 @@ const PageLayout = ({ children }) => {
   return (
     <div className="page-wrapper">
       <div className="content">{children}</div>
-      <img className="hero-img" src={backgroundUrl()}></img>
+      <img
+        className="hero-img"
+        src={backgroundUrl()}
+        alt="Top background decorative"
+      />
     </div>
   );
 };

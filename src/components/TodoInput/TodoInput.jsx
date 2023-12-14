@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import "./TodoInput.css";
 import TodoCard from "../TodoCard";
 import TodoCheck from "../TodoCheck";
@@ -14,11 +15,11 @@ const TodoInput = ({ todo, setTodo, addTodo }) => {
     <TodoCard>
       <div className="input-wrapper">
         <TodoCheck />
-        <label htmlFor="todo" className="label">
+        <label className="label" htmlFor="todo-input">
           <input
+            id="todo-input"
             className="input"
             type="text"
-            id="todo"
             placeholder="Create a new todo..."
             value={todo}
             onChange={(e) => setTodo(e.target.value)}

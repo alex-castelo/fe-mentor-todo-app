@@ -6,7 +6,7 @@ import CrossIcon from "./_components/CrossIcon";
 import ThemeContext from "../../context/ThemeContext";
 
 const TodoItem = ({ todo, checkTodo, deleteTodo }) => {
-  const [theme, _] = useContext(ThemeContext);
+  const [theme, __] = useContext(ThemeContext);
 
   const textClasses = `item-description ${
     theme === "light" ? "light" : "dark"
@@ -24,13 +24,13 @@ const TodoItem = ({ todo, checkTodo, deleteTodo }) => {
           completed={todo.completed}
           checkTodo={() => checkTodo(todo.id)}
         />
-        <p
+        <button
           style={{ cursor: "pointer" }}
           className={textClasses}
           onClick={() => checkTodo(todo.id)}
         >
           {todo.description}
-        </p>
+        </button>
         <button onClick={() => deleteTodo(todo.id)}>
           <CrossIcon />
         </button>
