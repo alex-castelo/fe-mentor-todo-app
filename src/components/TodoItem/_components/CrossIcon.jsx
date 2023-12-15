@@ -1,6 +1,11 @@
 const CrossIcon = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+    <svg
+      data-testid="cross-icon"
+      xmlns="http://www.w3.org/2000/svg"
+      width="18"
+      height="18"
+    >
       <path
         fill="#494C6B"
         fillRule="evenodd"
