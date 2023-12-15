@@ -1,6 +1,5 @@
 {
   "**/*.{js,jsx}": ["eslint", "prettier --write"],
-  "*.html": ["eslint", "prettier --write"],
-  "*.scss": "prettier --write",
-  "*/spec.{js,jsx}": "vitest related"
+  "*.css": "prettier --write",
+  "**/*.spec.{js,jsx}": "vitest related --run"
 }
