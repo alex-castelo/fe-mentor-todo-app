@@ -43,7 +43,7 @@ const ThemeButton = () => {
   );
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} aria-label="theme toggle button">
       {theme === "light" ? moonIcon : sunIcon}
     </button>
   );

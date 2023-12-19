@@ -4,6 +4,11 @@ import "./page-layout.css";
 import useIsMobile from "../../hooks/useIsMobile";
 import ThemeContext from "../../context/ThemeContext";
 
+import darkBkgDesktopImg from "../../assets/img/bg-mobile-light.jpg";
+import lightBkgDesktopImg from "../../assets/img/bg-desktop-light.jpg";
+import darkBkgMobileImg from "../../assets/img/bg-mobile-dark.jpg";
+import lightBkgMobileImg from "../../assets/img/bg-mobile-light.jpg";
+
 const PageLayout = ({ children }) => {
   const [theme, __] = useContext(ThemeContext);
   const [isMobile, _] = useIsMobile();
@@ -11,15 +16,13 @@ const PageLayout = ({ children }) => {
   const backgroundUrl = () => {
     if (theme === "light") {
       if (isMobile) {
-        return "../../src/assets/img/bg-mobile-light.jpg";
+        return lightBkgMobileImg;
       }
 
-      return "../../src/assets/img/bg-desktop-light.jpg";
+      return lightBkgDesktopImg;
     }
 
-    return isMobile
-      ? "../../src/assets/img/bg-mobile-dark.jpg"
-      : "../../src/assets/img/bg-desktop-dark.jpg";
+    return isMobile ? darkBkgMobileImg : darkBkgDesktopImg;
   };
 
   return (

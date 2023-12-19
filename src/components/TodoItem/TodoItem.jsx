@@ -18,24 +18,26 @@ const TodoItem = ({ todo, checkTodo, deleteTodo }) => {
     theme === "light" ? "todo-item light-bkg" : "todo-item dark-bkg";
 
   return (
-    <div className={itemClasses}>
-      <li key={todo.id} className="item-wrapper">
-        <TodoCheck
-          completed={todo.completed}
-          checkTodo={() => checkTodo(todo.id)}
-        />
-        <button
-          style={{ cursor: "pointer" }}
-          className={textClasses}
-          onClick={() => checkTodo(todo.id)}
-        >
-          {todo.description}
-        </button>
-        <button onClick={() => deleteTodo(todo.id)}>
-          <CrossIcon />
-        </button>
-      </li>
-    </div>
+    <li key={todo.id} className={`item-wrapper ${itemClasses}`}>
+      <TodoCheck
+        completed={todo.completed}
+        checkTodo={() => checkTodo(todo.id)}
+      />
+      <button
+        aria-label={`Mark as complete: ${todo.description}`}
+        style={{ cursor: "pointer" }}
+        className={textClasses}
+        onClick={() => checkTodo(todo.id)}
+      >
+        {todo.description}
+      </button>
+      <button
+        aria-label="delete item cross button"
+        onClick={() => deleteTodo(todo.id)}
+      >
+        <CrossIcon />
+      </button>
+    </li>
   );
 };
 
