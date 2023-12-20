@@ -8,7 +8,7 @@ import TheHeader from "./components/TheHeader/TheHeader";
 
 const App = () => {
   const hasDarkSchema = window.matchMedia(
-    "(prefers-color-scheme: dark)"
+    "(prefers-color-scheme: dark)",
   ).matches;
   const defaultSchema = hasDarkSchema ? "dark" : "light";
   const theme = useState(defaultSchema);
@@ -18,9 +18,7 @@ const App = () => {
       <PageLayout>
         <div>
           <TheHeader />
-          <div>
-            <Home />
-          </div>
+          <Home />
         </div>
       </PageLayout>
     </ThemeContext.Provider>
