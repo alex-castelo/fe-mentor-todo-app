@@ -31,10 +31,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop dark screenshot](./img/todo-desktop-dark.png)
-![Mobile dark screenshot](./img/todo-mobile-dark.png)
-![Desktop light screenshot](./img/todo-desktop-light.png)
-![Mobile light screenshot](./img/todo-mobile-light.png)
+![Desktop dark screenshot](./img/todo-desktop-dark.png){: width="200px" height="300px"}
+![Mobile dark screenshot](./img/todo-mobile-dark.png){: width="200px" height="300px"}
+![Desktop light screenshot](./img/todo-desktop-light.png){: width="200px" height="300px"}
+![Mobile light screenshot](./img/todo-mobile-light.png){: width="200px" height="300px"}
 
 ### Links
 
