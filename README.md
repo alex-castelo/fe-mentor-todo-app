@@ -31,12 +31,13 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="./img/todo-mobile-dark.png" alt="Image Description" width="200px" height="300px">
+<div style="display: flex; gap: 1rem;">
+  <img src="./img/todo-mobile-dark.png" alt="Dark mode mobile application view" width="200px" height="300px">
+  <img src="./img/todo-mobile-light.png" alt="Light mode mobile application view" width="200px" height="300px">
+</div>
 
 ![Desktop dark screenshot](./img/todo-desktop-dark.png)
-![Mobile dark screenshot](./img/todo-mobile-dark.png)
 ![Desktop light screenshot](./img/todo-desktop-light.png)
-![Mobile light screenshot](./img/todo-mobile-light.png)
 
 ### Links
 
