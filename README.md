@@ -31,13 +31,10 @@ Users should be able to:
 
 ### Screenshot
 
-<div style="display: flex; gap: 1rem;">
-  <img src="./img/todo-mobile-dark.png" alt="Dark mode mobile application view" width="200px" height="300px">
-  <img src="./img/todo-mobile-light.png" alt="Light mode mobile application view" width="200px" height="300px">
-</div>
-
 ![Desktop dark screenshot](./img/todo-desktop-dark.png)
+<img src="./img/todo-mobile-dark.png" alt="Dark mode mobile application view" width="200px" height="300px">
 ![Desktop light screenshot](./img/todo-desktop-light.png)
+<img src="./img/todo-mobile-light.png" alt="Light mode mobile application view" width="200px" height="300px">
 
 ### Links
 
@@ -59,7 +56,7 @@ Users should be able to:
 
 This is my first React project so all was new for me. I've learned several things:
 
-- How to use `JSX`sintax
+- How to use `JSX` syntax
 - How to use `useState` and `useEffect` hooks
 - How React handles data flow
 
